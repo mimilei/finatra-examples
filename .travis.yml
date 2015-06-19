@@ -9,7 +9,6 @@ jdk:
   - oraclejdk8
 
 env:
-  - TEST_DIR=activator-seed
   - TEST_DIR=hello-world
   - TEST_DIR=hello-world-heroku
   - TEST_DIR=twitter-clone
