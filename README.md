@@ -9,9 +9,6 @@ A collection of **completely standalone** example [Finatra][finatra] application
 ## Examples Projects
 For more detailed information see the README.md within each example project.
 
-### [activator-seed](activator-seed/README.md)
-A minimal Typesafe [activator](https://www.typesafe.com/get-started) seed template for creating a [Finatra][finatra] application.
-
 ### [hello-world](hello-world/README.md)
 An example [Finatra][finatra] application that highlights features of the [finatra-http](https://github.com/twitter/finatra/tree/master/http) framework.
 
