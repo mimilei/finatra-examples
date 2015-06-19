@@ -1,0 +1,19 @@
+language: scala
+
+scala:
+  - 2.11.6
+
+jdk:
+  - openjdk7
+  - oraclejdk7
+  - oraclejdk8
+
+env:
+  - TEST_DIR=activator-seed
+  - TEST_DIR=hello-world
+  - TEST_DIR=hello-world-heroku
+  - TEST_DIR=twitter-clone
+
+script: travis_retry cd $TEST_DIR && sbt ++$TRAVIS_SCALA_VERSION clean test
+
+after_script: cd hello-world && mvn clean test
