@@ -12,6 +12,12 @@ version := "1.0.0-SNAPSHOT"
 
 scalaVersion := "2.11.6"
 
+resolvers ++= Seq(
+  Resolver.sonatypeRepo("releases"),
+  "Twitter Maven" at "http://maven.twttr.com",
+  "Finatra Repo" at "http://twitter.github.com/finatra"
+)
+
 libraryDependencies ++= Seq(
   "com.twitter.finatra" %% "finatra-http" % "2.0.0.M2",
   "com.twitter.finatra" %% "finatra-logback" % "2.0.0.M2",
