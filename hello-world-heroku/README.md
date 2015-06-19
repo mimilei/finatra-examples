@@ -5,10 +5,10 @@ An example finatra application that highlights features of the [finatra-http](ht
 Run the example server on Heroku:
 -----------------------------------------------------------
 
-Copy the finatra/examples/finatra-hello-world directory contents (minus the .git directory) to another location locally.
+Copy the finatra-examples/hello-world-heroku directory contents (minus the .git directory) to another location locally.
 
 ```
-$ cp -R finatra/examples/finatra-hello-world/ ~/finatra-hello-world
+$ cp -R finatra-examples/finatra-hello-world-heroku/ ~/finatra-hello-world
 ```
 
 Intialize a git repository in the new directory location:
@@ -38,7 +38,7 @@ $ git commit -m "Initial commit."
 Compile and stage the application:
 
 ```
-$ ./sbt compile stage
+$ sbt compile stage
 ```
 
 Make sure you have the [Heroku Toolbelt](https://toolbelt.heroku.com/) [installed](https://devcenter.heroku.com/articles/getting-started-with-scala#set-up).
