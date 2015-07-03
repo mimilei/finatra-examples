@@ -6,8 +6,8 @@ Run the example server locally with sbt:
 -----------------------------------------------------------
 
 ```
-$ cd finatra/examples/finatra-hello-world
-$ ./sbt -Dlogback.configurationFile=src/test/resources/logback-test.xml run
+$ cd finatra-examples/hello-world
+$ sbt run
 ```
 
 Browse to: [http://localhost:8888/hi?name=foo](http://localhost:8888/hi?name=foo)
@@ -18,6 +18,7 @@ Build and run a deployable jar:
 -----------------------------------------------------------
 
 ```
-$ ./sbt assembly
-$ java -Dlogback.configurationFile=src/test/resources/logback-test.xml -jar target/scala-2.11/finatra-hello-world-assembly-1.0.0-SNAPSHOT.jar -http.port=:8888 -admin.port=:9990
+$ sbt assembly
+$ java -jar target/scala-2.11/hello-world-assembly-1.0.0-SNAPSHOT.jar -http.port=:8888 -admin.port=:9990
 ```
+

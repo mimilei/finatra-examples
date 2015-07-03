@@ -18,6 +18,11 @@ resolvers ++= Seq(
   "Finatra Repo" at "http://twitter.github.com/finatra"
 )
 
+assemblyMergeStrategy in assembly := {
+  case "BUILD" => MergeStrategy.discard
+  case other => MergeStrategy.defaultMergeStrategy(other)
+}
+
 libraryDependencies ++= Seq(
   "com.twitter.finatra" %% "finatra-http" % "2.0.0.M2",
   "com.twitter.finatra" %% "finatra-logback" % "2.0.0.M2",
