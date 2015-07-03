@@ -2,6 +2,7 @@
 .idea
 *.iml
 *.ipr
+*.log
 classes/
 target/
 sbt-launch.jar
