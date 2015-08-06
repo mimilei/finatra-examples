@@ -6,3 +6,5 @@
 classes/
 target/
 sbt-launch.jar
+--
+-H
