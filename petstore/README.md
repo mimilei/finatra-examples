@@ -13,4 +13,7 @@ $ cd finatra-examples/petstore
 $ sbt run
 ```
 
-The app will be running at [http://localhost:8888](http://localhost:8888)
+The app will be running at [http://localhost:8888](http://localhost:8888).
+
+The database has already been filled with example data, which can be viewed in `PetstoreServer.scala`.
+To begin with a completely empty database, replace line 52 with the commented-out line 51.

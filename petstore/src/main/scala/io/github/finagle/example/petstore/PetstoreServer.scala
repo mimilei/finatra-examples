@@ -48,7 +48,8 @@ class PetstoreServer extends HttpServer {
     LogbackModule,
     new TwitterModule() {
       override protected def configure(): Unit = {
-        bind[PetstoreDb].in[Singleton]
+//        bind[PetstoreDb].in[Singleton] //Replace bind[PetstoreDb].toInstance(db) with this for an empty database
+        bind[PetstoreDb].toInstance(db)
       }
     }
   )
