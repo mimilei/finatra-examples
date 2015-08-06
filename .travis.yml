@@ -12,5 +12,6 @@ env:
   - TEST_DIR=hello-world
   - TEST_DIR=hello-world-heroku
   - TEST_DIR=twitter-clone
+  - TEST_DIR=petstore
 
 script: travis_retry cd $TEST_DIR && if [ "$TEST_DIR" == "hello-world" ]; then sbt ++$TRAVIS_SCALA_VERSION clean test && mvn clean test; else sbt ++$TRAVIS_SCALA_VERSION clean test; fi
